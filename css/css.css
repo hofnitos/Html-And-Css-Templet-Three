@@ -2,14 +2,13 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
 }
 
 ul {
@@ -120,7 +119,7 @@ nav .show {
     nav .nav-items {
         flex-direction: column;
         background-color: white;
-        top: calc(10vh + 12px);
+        top: 10vh;
         left: 0;
         position: absolute;
         width: 100%;
@@ -334,6 +333,9 @@ nav .show {
     .phones .new-phone {
         grid-template-columns: 1fr;
     }
+    .phones .new-phone .phone {
+        padding: 8px;
+    }
 }
 
 .phones button {
@@ -378,7 +380,7 @@ nav .show {
 }
 
 .iphone ul li {
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .iphone ul li p {
@@ -404,6 +406,11 @@ nav .show {
         text-align: center;
         display: flex;
         flex-direction: column-reverse;
+        overflow: hidden;
+    }
+    .iphone .iphone-content img {
+        height: 400px;
+        width: 330px;
     }
 }
 
